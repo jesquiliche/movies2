@@ -1,0 +1,19 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  
+  background-size: 100%;
+  background-repeat: no-repeat;
+
+  align-items: center;
+  padding: 0rem;
+  min-height: 100vh;
+}
+
+.resaltado {
+  text-shadow: -2px -2px 0 black,
+                2px -2px 0 black,
+               -2px  2px 0 black,
+                2px  2px 0 black;
+}

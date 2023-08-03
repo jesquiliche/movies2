@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.card-detalle,.card-busqueda {
+  border-radius: 15px;
+  color: black;
+  border: 1px solid black;
+  font-size: large;
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.8);
+  
+}
+img {
+  border-radius: 10px;
+}
+.container-text {
+  z-index: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+  opacity: 0.8;
+  padding: 10px;
+  text-align: center; /* Agrega esta línea */
+  
+  align-content: center;
+}
+
+.borde-personalizado {
+  border: 1px solid black;
+}
