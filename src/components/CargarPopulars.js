@@ -1,3 +1,4 @@
+'use client'
 import ListaPeliculas from "@/components/listarpeliculas";
 
 const fetchPeliculas = async () => {

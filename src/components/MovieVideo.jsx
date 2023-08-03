@@ -16,7 +16,7 @@ const MovieVideo = ({ id }) => {
         const data = await response.json();
         const videos = data.videos.results;
         if (videos.length > 0) {
-          setVideoKey(videos[0].key);
+          await setVideoKey(videos[0].key);
         }
       } catch (error) {
         console.error("Error al obtener los datos de la película:", error);
@@ -26,9 +26,7 @@ const MovieVideo = ({ id }) => {
     getMovieVideo();
   }, []);
 
-  if (!videoKey) {
-    return <div>Cargando...</div>;
-  }
+  
 
   const videoUrl = `https://www.youtube.com/embed/${videoKey}?showinfo=0`;
 
