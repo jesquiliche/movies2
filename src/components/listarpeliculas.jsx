@@ -35,7 +35,7 @@ const MejorValoradas = ({ data, title }) => {
   };
 
   return (
-    <div className="container mx-auto mt-2 ">
+    <div className="container mx-auto mt-5 ">
       
       <div className="mt-3">
         <Slider {...settings}>
