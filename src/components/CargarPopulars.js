@@ -11,10 +11,7 @@ const fetchPeliculas = async () => {
   });
 
   try {
-    const response = await fetch(`${url}?${params}`, {
-        cache: 'no-store'
-      
-    });
+    const response = await fetch(`${url}?${params});
 
     if (!response.ok) {
       throw new Error("Network response was not ok.");
