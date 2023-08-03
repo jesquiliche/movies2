@@ -1,4 +1,3 @@
-'use client'
 import ListaPeliculas from "@/components/listarpeliculas";
 
 const fetchPeliculas = async () => {
@@ -11,7 +10,7 @@ const fetchPeliculas = async () => {
   });
 
   try {
-    const response = await fetch(`${url}?${params});
+    const response = await fetch(`${url}?${params}`,{cache:'no-store'}); // Añade el backtick aquí
 
     if (!response.ok) {
       throw new Error("Network response was not ok.");
