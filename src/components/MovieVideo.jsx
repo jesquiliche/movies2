@@ -34,7 +34,7 @@ const MovieVideo = ({ id }) => {
    <div className="relative w-full P-2" style={{ paddingTop: "56.25%" }}>
       <h2>Video de la película</h2>
       <iframe
-        
+        loading="lazy"
         src={videoUrl}
         title="Trailer de la película"
         frameBorder="0"
