@@ -28,9 +28,9 @@ const CargarPopulares = async () => {
   const peliculas = await fetchPeliculas();
 
   return (
-    <>
+    <div className="container w-11/12">
       <ListaPeliculas data={peliculas} title="Detrás de las escenas" />
-    </>
+    </div>
   );
 };
 

@@ -14,7 +14,7 @@ const MejorValoradas = ({ data, title }) => {
     dots: true,
     infinite: true,
     speed: 500,
-    slidesToShow: 5, // Muestra 3 películas en la pantalla al mismo tiempo
+    slidesToShow: 8, // Muestra 3 películas en la pantalla al mismo tiempo
     slidesToScroll: 1,
     responsive: [
       {
@@ -60,7 +60,7 @@ const MejorValoradas = ({ data, title }) => {
                 />
               
                     <h2 className="text-center font-bold text-md">
-                      {p.title}
+                      
                       <RatingStars rating={p.vote_average / 2} />
                     </h2>
                   </Link>
