@@ -13,7 +13,7 @@ const MejorValoradas = ({ data, title }) => {
   const settings = {
     dots: true,
     infinite: true,
-    speed: 500,
+    speed: 200,
     slidesToShow: 8, // Muestra 3 películas en la pantalla al mismo tiempo
     slidesToScroll: 1,
     responsive: [
