@@ -74,7 +74,7 @@ const SearchForm = () => {
       {searchResults && searchResults.length > 0 && (
         <>
           
-        <div className="mt-5">
+        <div className="mt-5 w-11/12">
         <ListaPaginada data={searchResults} title="Encontradas" indice={5}></ListaPaginada>
         <div class="flex justify-center mt-10 mb-20">
            <button
