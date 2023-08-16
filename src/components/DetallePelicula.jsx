@@ -110,7 +110,7 @@ const ObtenerDetalle = ({ id }) => {
             className="transform transition-transform duration-500 hover:scale-125"
           >
             <Link href={`/Personas/${actor.id}`}>
-              <div>
+              <Animacion>
                 {actor.profilePath && (
                   <img
                     loading="lazy"
@@ -122,7 +122,7 @@ const ObtenerDetalle = ({ id }) => {
                     className="mx-auto h-36"
                   />
                 )}
-              </div>
+              </Animacion>
 
               <p className="text-center font-bold text-md">{actor.name}</p>
             </Link>
@@ -136,7 +136,7 @@ const ObtenerDetalle = ({ id }) => {
     <>
       <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 min-h-screen mt-20 border border-gray-400 rounded-lg shadow-lg w-scream mx-auto p-4 w-11/12">
         <div className="col-span-3 sm:col-span-1">
-        
+          <Animacion>
           <img
             
            
@@ -144,7 +144,7 @@ const ObtenerDetalle = ({ id }) => {
             alt={movieDetails?.title}
             className="w-full h-auto rounded-lg mx-auto"
           />
-          
+          </Animacion>
           <div className="relative -top-11 right-5 ml-2">
                   <div className="flex items-center justify-center w-14 h-14 bg-blue-500 rounded-full">
                     <span className="text-white text-sm font-bold">

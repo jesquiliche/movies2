@@ -11,7 +11,7 @@ const ListaPaginada = ({ data, indice }) => {
         className={`grid grid-cols-1 sm:grid-cols-${indice} md:grid-cols-5 lg:grid-cols-${indice} xl:grid-cols-${indice} gap-4 mx-2 `}
       >
         {data.map((p) => (
-          <div
+          <Animacion 
             key={p.id}
             className="bg-white overflow-hidden rounded-lg shadow-lg border
              border-gray-300 opacity-100 transform transition-transform duration-500 hover:scale-110"
@@ -47,7 +47,7 @@ const ListaPaginada = ({ data, indice }) => {
                     format(new Date(p.release_date), "dd/MM/yyyy")}
               </p>
             </div>
-          </div>
+          </Animacion>
         ))}
       </div>
     </Animacion>

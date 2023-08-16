@@ -5,6 +5,7 @@ import RatingStars from "./ratingstars";
 
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import Animacion from "./animacion";
 
 const MejorValoradas = ({ data, title }) => {
   let peliculas = data.results;
@@ -45,8 +46,8 @@ const MejorValoradas = ({ data, title }) => {
                 className="bg-white overflow-hidden rounded-lg shadow-lg 
             border border-gray-300 opacity-100 m-1"
               >
+                <Animacion>
                 <div className="p-2">
-                
                   <Link href={`/Detalle/${p.id}`}>
                   
                 <img
@@ -64,7 +65,8 @@ const MejorValoradas = ({ data, title }) => {
                       <RatingStars rating={p.vote_average / 2} />
                     </h2>
                   </Link>
-                </div>
+                  </div>
+                </Animacion>
               </div>
             </div>
           ))}
