@@ -61,6 +61,7 @@ const ObtenerDetalle = ({ id }) => {
     const date = new Date(dateString);
     const options = { year: "numeric", month: "long", day: "numeric" };
     const formatter = new Intl.DateTimeFormat("es-ES", options);
+   ;
 
     return formatter.format(date);
   };
@@ -132,7 +133,7 @@ const ObtenerDetalle = ({ id }) => {
   };
 
   return (
-    <Animacion>
+    <>
       <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 min-h-screen mt-20 border border-gray-400 rounded-lg shadow-lg w-scream mx-auto p-4 w-11/12">
         <div className="col-span-3 sm:col-span-1">
         
@@ -143,6 +144,7 @@ const ObtenerDetalle = ({ id }) => {
             alt={movieDetails?.title}
             className="w-full h-auto rounded-lg mx-auto"
           />
+          
           <div className="relative -top-11 right-5 ml-2">
                   <div className="flex items-center justify-center w-14 h-14 bg-blue-500 rounded-full">
                     <span className="text-white text-sm font-bold">
@@ -151,6 +153,7 @@ const ObtenerDetalle = ({ id }) => {
                   </div>
                 </div>
         </div>
+        
         <div className="sm:col-span-2">
           <div>
             <h4 className="text-dark font-bold text-3xl mb-5">
@@ -192,7 +195,7 @@ const ObtenerDetalle = ({ id }) => {
           </div>
         </div>
       </div>
-    </Animacion>
+    </>
   );
 };
 
