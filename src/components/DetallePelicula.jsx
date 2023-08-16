@@ -5,6 +5,7 @@ import axios from "axios";
 import Link from "next/link";
 
 import RatingStars from "./ratingstars";
+import Animacion from "./animacion";
 
 const api_key=process.env.NEXT_PUBLIC_API_KEY;;
 
@@ -131,7 +132,7 @@ const ObtenerDetalle = ({ id }) => {
   };
 
   return (
-    <>
+    <Animacion>
       <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 min-h-screen mt-20 border border-gray-400 rounded-lg shadow-lg w-scream mx-auto p-4 w-11/12">
         <div className="col-span-3 sm:col-span-1">
         
@@ -191,7 +192,7 @@ const ObtenerDetalle = ({ id }) => {
           </div>
         </div>
       </div>
-    </>
+    </Animacion>
   );
 };
 
