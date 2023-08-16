@@ -137,7 +137,7 @@ const ObtenerDetalle = ({ id }) => {
         <div className="col-span-3 sm:col-span-1">
         
           <img
-            loading="lazy"
+            
            
             src={`https://image.tmdb.org/t/p/w342/${movieDetails?.poster_path}`}
             alt={movieDetails?.title}

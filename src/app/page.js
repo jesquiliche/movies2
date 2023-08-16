@@ -7,11 +7,10 @@ import Animacion from "@/components/animacion";
 export default function Home() {
   return (
     <main className={styles.main}>
-    <Animacion>
-        <Busqueda />
-
+      <Busqueda />
+    
         <CargarPopulares />
-      </Animacion>
+      
     </main>
-  )
+  );
 }
