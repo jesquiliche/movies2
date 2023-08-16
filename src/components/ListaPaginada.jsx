@@ -6,7 +6,7 @@ import Animacion from "./animacion";
 
 const ListaPaginada = ({ data, indice }) => {
   return (
-    <Animacion>
+    <>
       <div
         className={`grid grid-cols-1 sm:grid-cols-${indice} md:grid-cols-5 lg:grid-cols-${indice} xl:grid-cols-${indice} gap-4 mx-2 `}
       >
@@ -50,7 +50,7 @@ const ListaPaginada = ({ data, indice }) => {
           </div>
         ))}
       </div>
-    </Animacion>
+    </>
   );
 };
 
