@@ -46,7 +46,7 @@ const MejorValoradas = ({ data, title }) => {
                 className="bg-white overflow-hidden rounded-lg shadow-lg 
             border border-gray-300 opacity-100 m-1"
               >
-                <Animacion>
+                
                 <div className="p-2">
                   <Link href={`/Detalle/${p.id}`}>
                   
@@ -66,7 +66,7 @@ const MejorValoradas = ({ data, title }) => {
                     </h2>
                   </Link>
                   </div>
-                </Animacion>
+                
               </div>
             </div>
           ))}
