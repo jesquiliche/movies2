@@ -52,7 +52,7 @@ const SearchForm = () => {
 
   return (
     <>
-      <form onSubmit={handleSubmit} className="mx-auto mt-64">
+      <form onSubmit={handleSubmit} className="mx-auto mt-64 w-3/4">
      <Cabecera/>       
        
         <div className="flex items-center border-b-2 border-blue-500 py-2 mt-5">

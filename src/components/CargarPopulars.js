@@ -28,7 +28,7 @@ const CargarPopulares = async () => {
   const peliculas = await fetchPeliculas();
 
   return (
-    <div className="container w-11/12">
+    <div className="container w-11/12 mx-auto">
       <ListaPeliculas data={peliculas} title="Detrás de las escenas" />
     </div>
   );
